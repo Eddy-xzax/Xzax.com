@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xzax.com</title>
+  <head>
+  	<header>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#paypal">Open PayPal account</a></li>
+      <li><a href="#how">How it works</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  </header>
+  <body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+    	background-color: grey
+    }
+    header{
+    	width:100%;
+    	position:fixed;
+        z-index:999;
+    }
+    h1 {
+    	color:rgb(235, 230, 230);
+        text-align: center;
+        font-family: 'Georgia', serif;
+    }
+    h3 {
+    	margin-top:10px;
+        color:rgb(235, 230, 230);
+        font-family: 'Georgia', serif;
+        text-align: center;
+        }
+    p  {
+    	margin-top:10px;
+        margin-bottom:10px;
+    	margin:10px;
+    	color:rgb(235, 230, 230);
+        font-family: 'Georgia', serif;
+        text-align: center;
+        
+    }
+    /* Navigation styles */
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+    }
+
+    /* Media query for responsive layout */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links.active li {
+        margin: 10px 0;
+      }
+   img {
+    display: block;
+    width:80%;
+     height: auto;
+     border:1px solid grey;
+     border-radius:50%;
+     position: relative;
+     margin-left:auto;
+     margin-right:auto;
+     box-shadow: 0 1px 10px black ;
+      }
+      img: hover {
+      transform:  scaleX (-1);
+      }
+    div .container{
+      align-items: center;
+      padding: 10px 20px;
+   	}
+      
+     .card{
+     width:82%;
+     height: 68%;
+     background-image: linear-gradient(0deg,black, grey,white);
+     margin-bottom:10px;
+     margin-left:40px;
+     border-radius:20px;
+     }
+   li {
+   	margin-left: 5px;
+	    margin-top:10px;
+        margin-bottom:10px;
+    	color:rgb(235, 230, 230);
+        font-family: 'Georgia', serif;
+        }
+   hr {
+   margin-right: auto;
+   margin-left: auto;
+   width: 90%;
+   height: 1px;	
+   color: white; 
+   }
+  button {
+   margin-top: 10px;
+   margin-left: 100px;
+   width:35%;
+   border:1px solid green; 
+   border-radius: 20px;
+   height: 11%;
+   color: white;
+   background-color: transparent;
+    }
+    }
+  </style>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script><br>
+  	<section id="home">
+  <h1>Mobile Wallet Exchange Service</h1><br>
+  	<div>
+<img src="/storage/emulated/0/China itech affiliation website/6617.jpg">
+<a
+href="https://chinaitechpay.com/?ref=2031">
+ <button><p>Start Exchanging</p>
+ <style>
+ button {
+   margin-bottom: 10px;
+   margin-left:33%;
+   width:35%;
+   border:2px solid skyblue;
+   border-radius: 20px;
+   height: auto;
+   color: white;
+   background-color: transparent;
+    }
+</style>	
+</button>
+</a>
+ </div>
+ 
+<h3>Fast & Secure Money Transfers</h3><hr>
+<p>Convert your PayPal balance to mobile wallet funds instantly. Our secure platform ensures your money reaches its destination safely, every time.</p>
+   </section>
+
+<h3>How It Works</h3>
+    <section id="paypal">
+	<div class="card"><br>
+		<div class="cardimg">
+			<img src="/storage/emulated/0/China itech affiliation website/paypal_fees_for_receiving_payments_1500x1000-1024x683.jpg" style= width="100%">
+			
+  <h3>Connect Your PayPal Account</h3><hr>
+  <li>Log in to your verified PayPal account.</li>
+   <li>Link it securely to our platform.</li>
+  <li>Your information stays protected.</li>
+  <p>In case you don't have apaypal account sign up for free.</p>
+
+  <button onclick="openPayPalSignup()"><p>Sign Up with PayPal</p></button>
+</section>
+  <script>
+    function openPayPalSignup() {
+      // PayPal's direct sign-up link (adjust if needed for your region)
+      const url = "https://www.paypal.com/signup";
+      // Opens the link in a new tab
+      window.open(url, '_blank');
+    }
+  </script>
+   </div>
+   </div>
+</div>
+	</div>
+	<img src="/storage/emulated/0/China itech affiliation website/closeup-two-men-sharing-content-with-their-phones.jpg" margin-top:"50px">
+	<section id="how">
+<h3><strong>2. Choose Your Mobile Wallet.</strong></h3><hr>
+   <li><strong>Select your preferred mobile wallet.</strong></li>
+   <li><strong>Enter your mobile wallet details.</strong></li>
+   <li><strong>Verify your information.</strong></li>
+
+<h3><strong>3.Start Your Transfer.</strong></h3><hr>
+   <li><strong>Enter the amount you want to exchange.</strong></li>
+   <li><strong>Review our competitive exchange rates.</strong></li>
+   <li><strong>Confirm your transaction.</strong></p>
+
+<h3><strong>4.Receive Your Funds.</strong></h3><hr>
+   <li><strong>Get your money in minutes.</strong></li>
+   <li><strong>Track your transfer in real time.</strong></li>
+   <li><strong>Automatic confirmation when complete.</strong></li>
+   </section>
+<section id ="about">
+<h3>Why Choose Us?</h3><hr>
+
+<li> <strong>✓ Instant Transfers.</strong></li>
+<li> <strong>✓ Competitive Exchange Rates.</strong></li>
+<li><strong>✓ 24/7 Customer Support.</strong></li>
+<li><strong>✓ Secure & Encrypted.</strong></li>
+<li><strong>✓ No Hidden Fees.</strong></li>
+<li><strong>✓ Easy to Use Platform.</strong></li>
+ <h3>Our Exchange Rates.</h3><hr>
+
+<p><strong>We offer competitive rates updated in real-time. Our transparent fee structure means no surprises.</strong></p>
+<li><strong>Low service fee: Only 2.5%.</strong></li>
+<li><strong>No hidden charges.</strong></li>
+<li><strong>Real-time exchange rates.</strong></li>
+<li><strong>Minimum transfer: $10.</strong></li>
+<li><strong>Maximum transfer: $1,000 per transaction.</strong></li>
+
+<h3>Security First</h3><hr>
+
+<p><strong>Your security is our priority:</strong></p>
+<li><strong>SSL encrypted transactions.</strong></li>
+<li><strong>Two-factor authentication.</strong></li>
+<li><strong>Verified by PayPal.</strong></li>
+<li><strong>Regular security audits.</strong></li>
+<li><strong>Protected user data.</strong></li>
+<p><strong>Ready to convert your PayPal balance to mobile wallet funds? Create your account today and make your first transfer in minutes.</strong></p>
+</section>
+<a
+href="https://chinaitechpay.com/?ref=2031">
+ <button><p>Start Exchanging</p></button></a>
+<p>Terms and conditions apply. Licensed and regulated money transfer service.</p>
+
+</body>
+</html>
